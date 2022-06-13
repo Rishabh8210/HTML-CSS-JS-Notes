@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selector</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        .navigation{
+            display: flex;
+            font-size: 20px;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        header{
+            display: flex;
+            /* flex-direction: row; //default */
+            flex-direction: column;
+        }
+        section{
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+            height: 344px;
+            justify-content: center;
+        }
+        /* section::before{ 
+            content:"this is a content"
+        }
+        section::after{
+            content:"this is a content"
+        } */
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class ="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to Coding World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae odio optio culpa expedita. Quaerat consequuntur, ducimus assumenda voluptatum iusto aut architecto necessitatibus nemo tempore, harum rem blanditiis voluptatibus neque debitis eaque sequi distinctio asperiores, non unde animi enim saepe id!
+            </p>
+        </section>
+        <hr>
+</body>
+</html>

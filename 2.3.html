@@ -1,0 +1,67 @@
+<!-- CSS Selectors are used to target HTML elements.
+Selectors make it easy for us to easily target single/multiple HTML elements in the markup.
+
+We will see four types of CSS Selectors:
+
+CSS element Selector
+CSS id Selector
+CSS class Selector
+The CSS grouping Selector -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        p{
+            border: 2px solid red;
+        }
+        
+        /* Id selector */
+        #firstPara{
+            color: green;
+        }
+
+        /* Class selector */
+        .bgBlue{
+            color: yellow;
+            background-color: blue;
+        }
+
+        /* Grouping selector */
+        footer, span{
+            background-color: pink; 
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstPara">This is a simple paragraph to demonstrate css selectors</p>
+    <p id="secondPara" class="redElement bgBlue">This is a another simple paragraph to demonstrate css selectors</p>
+    <div>
+        <p>This is yet another simple paragraph inside div to demonstrate css selectors</p>
+        <span>this is span</span>
+    </div>
+    <footer>This is footer</footer>
+</body>
+</html>
+
+<!-- Class Selector : 
+If we want to select a paragraph and assign multiple properties to it, then we can use Class Selector.  -->
+
+<!-- ID Selector :
+If we want to select the only paragraph to show any change, then we will be using ID selector.  -->
+
+<!-- Grouping Selector :
+    
+Grouping Selector is used when we have to make changes in more than one element. Let us understand with an example. Suppose we have two elements footer and span and we want the same changes in both the elements. Then we can do the following-
+
+<style>
+            footer, span{
+                 Background-color: pink;
+                        }
+</style> -->

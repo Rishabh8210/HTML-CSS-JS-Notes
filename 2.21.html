@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        .container{
+            display:flex;
+        }
+        .card{
+            /* border:2px solid red; */
+            padding: 23px 12px;
+            margin:23px 12px;
+            background-color: sandybrown;
+            /* box-shadow: offset-x,offset-y, color;
+            box-shadow: offset-x, offset-y, blur-radius, color;
+            box-shadow: offset-x, offset-y, blur-radius, spread-radius, color; */
+
+            /* box-shadow: 10px 13px green; */
+            /* box-shadow: -11px -10px green; */
+            /* box-shadow: 7px 5px 10px green; */
+            /* box-shadow: -7px -5px 10px green; */
+            box-shadow: 16px 11px 35px 1px green;
+            /* box-shadow: -7px -5px 10px 34px rgba(6, 66, 171, 0.5) */
+            /* box-shadow: inset 3px 5px green; */
+            /* For Multiple shadow */
+            
+            box-shadow: 8px 6px green, 15px 14px red;
+        }
+        .card h2{
+            /* text-shadow: 3px 4px red; */
+            /* text-shadow: 2px 1px 0px #ffffff; */
+            text-shadow: -2px -1px 0px #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="cars-1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ad odio veritatis velit nostrum ea ducimus, sed consequuntur exercitationem! Deserunt suscipit maiores molestias accusamus a aut dolore nesciunt libero dolorum.</p>
+        </div>
+        <div class="card" id="cars-2">
+            <h2>This is Java Course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ad odio veritatis velit nostrum ea ducimus, sed consequuntur exercitationem! Deserunt suscipit maiores molestias accusamus a aut dolore nesciunt libero dolorum.</p>
+        </div>
+        <div class="card" id="cars-3">
+            <h2>This is CSS source</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ad odio veritatis velit nostrum ea ducimus, sed consequuntur exercitationem! Deserunt suscipit maiores molestias accusamus a aut dolore nesciunt libero dolorum.</p>
+        </div>
+    </div>
+</body>
+</html>

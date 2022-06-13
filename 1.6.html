@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body>
+   > <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <label for="name"> Name</label>
+        <div>
+            <!-- To get the input as text, the syntax is- -->
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            <!-- To get the input type as an email in the form, the syntax is -->
+            Email: <input type="email" name="myEmail">
+        </div>
+
+        <br>
+        <div>
+            <!-- We can also add date and time in the form. To add these, the general syntax is- -->
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            <!-- To add any numeric text in the HTML form, the syntax is- -->
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            <!-- For checkbox- -->
+            Are you eligible?: <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+        <div>
+            <!-- For Radio buttons- -->
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <!-- for n option list -->
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf" selected>Swift</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <!-- To get the submit button in the form, the syntax is- -->
+            <input type="submit" value="Submit Now">
+            <!-- To reset all the information, entered in the form, we take the help of a reset button. To get the reset button, we have to write -->
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>
